@@ -1,1 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>ARES | Tactical Command</title>
+    <style>
+        :root { --blue: #58a6ff; --green: #238636; --bg: #0d1117; --card: #161b22; --border: #30363d; --text: #8b949e; }
+        body { background-color: var(--bg); color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 20px; display: flex; justify-content: center; }
+        .container { border: 1px solid var(--border); padding: 30px; border-radius: 8px; background-color: var(--card); text-align: center; box-shadow: 0 8px 24px rgba(0,0,0,0.5); width: 100%; max-width: 500px; }
+        h1 { color: var(--blue); letter-spacing: 2px; font-size: 1.5rem; margin-top: 0; }
+        .section-title { color: var(--blue); font-size: 0.9rem; font-weight: bold; text-transform: uppercase; margin-top: 20px; display: block; }
+        p { color: var(--text); line-height: 1.6; font-size: 0.95rem; }
+        .btn { background: var(--green); color: white; border: none; padding: 14px; border-radius: 6px; cursor: pointer; font-weight: bold; width: 100%; transition: 0.2s; text-decoration: none; display: inline-block; margin-top: 10px; box-sizing: border-box; }
+        .btn:hover { background: #2ea043; filter: brightness(1.1); }
+        .btn-outline { background: transparent; border: 1px solid var(--border); color: var(--blue); }
+        hr { border: 0; border-top: 1px solid var(--border); margin: 25px 0; }
+        .warning-box { border: 1px solid #6e1d1d; background: #2e0a0a; padding: 15px; border-radius: 6px; text-align: left; }
+    </style>
+</head>
+<body>
 
+<div class="container">
+    <h1>ARES SYSTEM</h1>
+    <img src="https://i.imgur.com/Wm63Wcl.gif" style="width: 100px; height: 100px; border-radius: 50%; border: 2px solid var(--blue); margin: 10px 0 20px 0;" alt="ARES LOGO">
+
+    <p><strong>Analytics, Reporting, and Evaluation System.</strong></p>
+
+    <span class="section-title">ARES Analytical System</span>
+    <p>ARES will analyize the combat effectiveness of a user based upon the stats for the game and platform.</p>
+
+    <hr>
+
+    <span class="section-title">ARES Reporting System</span>
+    <p>ARES will report to the user the stats they wish to be shown for the platform and game that they wish to have gathered.</p>
+
+    <hr>
+
+    <span class="section-title">ARES Evaluation System</span>
+    <p>ARES evaluates numerous aspects of a users data from the users K/D to overall kills. ARES will then compare users located within the same guild
+    and give an overall evaluation of all members of the guild.</p>
+
+    <hr>
+
+    <span class="section-title">ARES Build Evaluation System</span>
+    <p>This is the tool that sets ARES apart from basic stat bots. ARES does not just provide stats for numerous games. 
+    ARES features links to the most popular build tools for games such as Division 2, COD, Battlefield and if the tools come available even ARC Raider.</p>
+
+    <hr>
+
+    <button onclick="finalizeSync()" class="btn">ACKNOWLEDGE & EXIT</button>
+
+    <p style="font-size: 0.75rem; margin-top: 20px;">Questions? Contact <strong>Datormortis89</strong> via the ARES Support Terminal.</p>
+</div>
+
+<script>
+    function finalizeSync() {
+        // If this is a popup, close it. Otherwise, go to a fallback.
+        if (window.opener || window.history.length === 1) {
+            window.close();
+        } else {
+            alert("Uplink acknowledged. You may now close this tab.");
+        }
+    }
+</script>
+
+</body>
+</html>
